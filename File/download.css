@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #F0F8FF;
+    font-family: "Poppins", sans-serif;
+}
+
+.app-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-icon {
+    width: 170px;
+    height: 170px;
+    margin-right: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.details h1 {
+    margin: 0;
+    color: #333;
+}
+
+.details .version, .details .downloads, .details .rating {
+    margin: 5px 0;
+    color: #555;
+}
+
+.download-btn {
+    background: #a56ad9;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background: red;
+}
+
+.description {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.description h2 {
+    margin-top: 0;
+}
+
+.list{
+            padding : 0px 20px 0px 20px;
+        }
+
+.images {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure images are in a row */
+    gap: 10px;
+    margin-top: 10px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrolling */
+    padding-bottom: 10px; /* Add padding to avoid scrollbar overlap */
+}
+
+.images img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+            width: 100%;
+            background-color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-container {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-container img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .list-container {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .list-container li {
+            margin: 10px 0;
+        }
+
+        .list-container a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .f-form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .f-form-container .f-name,
+        .f-form-container .f-message {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+            width: 5cm;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .f-form-container .f-submit {
+            margin: 5px 0;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: orangered;
+            color: white;
+            cursor: pointer;
+        }
+
+        .f-form-container .f-submit:hover {
+            background-color: red;
+        }
+
+        .company-name {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .note{
+            margin-left: 35px;
+            margin-right: 25px;
+            font-size: 14px;
+        }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .app-icon {
+        margin-bottom: 10px;
+    }
+
+    .images img {
+        max-width: 100%; /* Ensure the images fit smaller screens */
+       
+    }
+
+    .download-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
